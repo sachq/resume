@@ -1,0 +1,221 @@
+\author{Sachin George Thomas}
+
+\documentclass[letterpaper,10pt]{article}
+
+% Required packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{pgffor}
+
+% Define colors
+\definecolor{primary}{RGB}{36, 51, 73}
+\definecolor{accent}{RGB}{53, 59, 68}
+\definecolor{rulered}{RGB}{189, 189, 189}
+\definecolor{section-divider}{RGB}{230, 230, 230}
+
+
+% Configure page margins
+\geometry{
+	a4paper,
+	margin=14mm,
+}
+
+% Configure section titles
+\titleformat{\section}
+    {\Large\bfseries\color{primary}}
+    {}{0em}
+    {}[\color{rulered}\titlerule]
+
+
+% Configure column separation
+\setlength{\columnsep}{3em}
+    
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom commands for contact info
+\newcommand{\contactItem}[2]{
+    {\color{accent}\small\faicon{#1}} \color{accent}#2\hspace{1em}
+}
+
+% Custom command for timeline entries
+\newcommand{\timelineEntry}[3]{%
+	\noindent\color{accent}\large\textbf{#1}\\
+	{\color{accent}#2}\hfill\textbf{\color{accent}\small[#3]}
+	\newline\newline
+}
+
+\newcommand{\texthr}[1]{%
+	\vspace{1em}
+	\noindent #1 {\color{primary}\leaders\hrule\hfill}%
+	\vspace{1em}
+}
+
+% Begin document
+\begin{document}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Header
+\begin{center}
+	{\Huge\color{primary}\textbf{Sachin Thomas}}\\[0.5em]
+    \contactItem{envelope}{sachq1@gmail.com}
+    \contactItem{phone}{(248) 918-8263}
+    \contactItem{linkedin}{linkedin.com/in/sachq}
+    \contactItem{github}{github.com/sachq}
+\end{center}
+
+% Professional Summary (full width)
+\section{Professional Summary}
+\noindent \large Software Engineer with 10+ years of progressive experience, evolving from Web Designer to Full-Stack Developer. Known for quickly mastering new technologies and frameworks to deliver innovative solutions. Brings a unique blend of design thinking and technical expertise to enterprise applications across multiple industries. \newline
+
+\textbf{Key Achievements:}
+
+\begin{itemize}[leftmargin=2em, itemsep=0.1em]
+	\item Rapid adoption of new frameworks and technologies as needed
+	\item Full-stack expertise spanning Angular, Flutter, and Node.js
+	\item 6+ years specialized in complex data-intensive applications
+	\item Advanced from UI/UX design to system architecture
+	\item Led technical teams and mentored junior developers
+	\item Track record of successful client project delivery
+\end{itemize}
+
+\section{Professional Experience}
+% Latcha & Associates Inc.
+\timelineEntry{Software Engineer}{Latcha \& Associates Inc.}{2020 - \the\year\space(Present)}
+\noindent\large\textbf{Car-Net Real-time Communication}\newline
+\noindent Architected and led development of enterprise marketing automation system processing real-time vehicle telemetry data
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Successfully integrated Car-Net vehicle telemetry system with marketing platform to deliver real-time customer communications
+	\item \textbf{Scale}: Platform serves 4 million+ customers across multiple US regions (Eastern, Central, South East, Pacific)
+	\item \textbf{Technical Stack}: Node.js, Angular, Jenkins, RESTful APIs
+	\item \textbf{Leadership}: Led cross-functional teams in daily deployments and rapid issue resolution
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{Marketing IQ - Volkswagen US}\newline
+\noindent Led comprehensive platform upgrade initiative for Volkswagen's dealer marketing system
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Successfully executed parallel migrations of Node.js backend to LTS version and Angular frontend upgrade.
+	\item \textbf{Key Impact}: Maintained zero downtime during migrations while serving thousands of dealers across regions
+	\item \textbf{Innovation}: Developed custom lightweight modules to replace heavyweight dependencies, optimizing platform performance
+	\item \textbf{Scale}: Manages marketing campaigns for 4M+ customers while maintaining system responsiveness
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{Marketing IQ Enhancements}\newline
+\noindent Spearheaded UX/UI optimization initiative for multi-tier marketing platform
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Redesigned and optimized APIs for improved performance and user experience
+	\item \textbf{Business Impact}: Streamlined workflow for dealers, regional managers, and program administrators
+	\item \textbf{Technical Stack}: Angular, Node.js, RESTful APIs
+	\item \textbf{Leadership}: Guided team through large-scale codebase refactoring while maintaining daily delivery schedules
+	\item \textbf{Innovation}: Implemented data-driven UI improvements based on user feedback and system analytics
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{Continuous Delivery Pipeline}\newline
+\noindent Established robust CI/CD infrastructure for daily deployments
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Implemented automated deployment pipelines using Jenkins
+	\item \textbf{Key Impact}: Enabled reliable daily releases while maintaining system stability
+	\item \textbf{Scale}: Successfully manages deployments across multiple regions and user tiers
+	\item \textbf{Leadership}: Coordinated with cross-functional teams to establish efficient issue resolution protocols
+\end{itemize}
+
+\texthr{}
+
+% CrowdANALYTIX
+\timelineEntry{Software Engineer}{CrowdANALYTIX}{2015 - 2020}
+\vspace{0.4em}\noindent\large\textbf{Belongings Check - Care Center Management Platform}\newline
+\noindent Led end-to-end development of an innovative mobile and web platform that revolutionized care center operations
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Architected and developed a cross-platform solution using Flutter (iOS) and Angular (PWA) that processed real-time video streams for automated belonging identification
+	\item \textbf{Key Impact}: Reduced check-in/check-out time by implementing AI-powered speech recognition and computer vision, streamlining caretaker workflows
+	\item \textbf{Technical Stack}: AngularJS, Webpack, RESTful APIs
+	\item \textbf{Leadership}: Spearheaded design and development across mobile and web platforms while mentoring team members
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{dataX Platform - Enterprise Data Intelligence Suite}\newline
+\noindent Architected a comprehensive data structuring and AI prediction platform used by Fortune 500 clients
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Built a scalable platform handling bulk image processing and AI model integration
+	\item \textbf{Business Impact}: Enabled clients to transform unstructured data into AI-ready datasets, accelerating their ML initiatives
+	\item \textbf{Scale}: Processed millions of data points while maintaining sub-second response times
+	\item \textbf{Technical Stack}:  AngularJS, Webpack, RESTful APIs
+	\item \textbf{Innovation}: Developed a novel demo module that became a key sales tool, showcasing real-time AI predictions
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{dataX Sync - GS1 Certification Platform}\newline
+\noindent Led development of a mission-critical product certification platform for major brands
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Implemented complex GS1 specifications while maintaining a user-friendly interface
+	\item \textbf{Business Impact}: Generated new revenue stream through Stripe payment integration
+	\item \textbf{Scale}: Successfully processed certifications for thousands of products
+	\item \textbf{Compliance}: Ensured platform met all GS1 certification requirements while maintaining optimal performance
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{Catalog Repository - Enterprise Data Management System}\newline
+\noindent Architected and implemented a high-scale product catalog system serving data science teams
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: Built a distributed system handling 10M+ products with sub-second query response
+	\item \textbf{Technical Stack}: Node.js, Express.js, Redis, MongoDB, Angular
+	\item \textbf{Scale}: Implemented Redis-based queue system for optimized data processing
+	\item \textbf{Compliance}: Achieved 99.9\% uptime while handling concurrent requests from multiple data science teams
+\end{itemize}
+
+\vspace{0.4em}\noindent\large\textbf{Catalog Repository - Enterprise Data Management System}\newline
+\noindent Led version control infrastructure upgrade initiative for development team
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Technical Achievement}: uccessfully set up and configured GitLab CE on cloud infrastructure
+	\item \textbf{Implementation}: Configured and deployed GitLab CE on cloud infrastructure
+	\item \textbf{Impact}: Improved developer productivity by implementing modern version control workflows
+	\item \textbf{Maintenance}: Established robust backup systems and security update protocols
+\end{itemize}
+
+\texthr{}
+
+% Karunya University
+\timelineEntry{Karunya University - EWYL Program}{Web Designer| Photographer}{2015 - 2020}
+\vspace{0.4em}\noindent\large\textbf{University Web Design Initiative - Karunya University}\newline
+\noindent Selected for Earn while you learn program (EWYL)  as University Web Designer | Photographer
+\begin{itemize}[leftmargin=*, nosep, itemsep=0.4em, before=\vspace{0.6em}, after=\vspace{0.8em}, label={}]
+	\item \textbf{Role}: uccessfully set up and configured GitLab CE on cloud infrastructure
+	\item \textbf{Creative Impact}
+	\begin{itemize}
+		\item Served as official student photographer for university website content
+		\item Created brochures and design assets using Adobe tools
+	\end{itemize}
+	\item \textbf{Technical Stack}: HTML/CSS, Adobe Photohsop and Illustrator
+	\item \textbf{Key Contributions}
+	\begin{itemize}
+		\item Managed photography sessions by recruiting and coordinating student volunteers
+		\item Delivered visual content for university's web presence
+		\item Designed and implemented Admissions website
+		\item Developed marketing materials using design tools
+	\end{itemize}
+\end{itemize}
+
+% Core Skills
+\section{Core Skills}
+\begin{itemize}[leftmargin=*, itemsep=0.1em, label={}]
+    \item \textbf{Programming Languages (based on usage)} TypeScript, JavaScript, Python, Dart
+    \item \textbf{Frontend} HTML5, CSS, SCSS, Angular, React, Flutter, jQuery, Vue.js, Adobe Suite, Figma, d3, loadash, Swagger/OpenAPI
+    \item \textbf{Backend} Node.js, Deno, NestJs, Django, FastAPI
+    \item \textbf{Data} Python Pandas
+    \item \textbf{Cloud Infrastructure} AWS, Azure, Google Cloud, DigitalOcean, Cloudflare
+    \item \textbf{AI Platforms} OpenAI API, Anthropic Claude API, Google Gemini API
+    \item \textbf{DevOps} Docker, SSH, CLI Tools, VirtualBox, Jenkins, Github, Gitlab, Postman
+    \item \textbf{Operating Systems} MacOS, Linux (Ubuntu Distribution mostly), Windows
+\end{itemize}
+
+\section{Education}
+\timelineEntry{B.Tech Information Technology}{Karunya University, India}{2008 - 2013}
+
+
+\end{document}
