@@ -1,0 +1,19 @@
+\usepackage{fontawesome}
+
+% Custom commands for contact info
+\newcommand{\contactItem}[2]{
+    {\color{accent}\small\faicon{#1}} \color{accent}#2\hspace{1em}
+}
+
+% Custom command for timeline entries
+\newcommand{\timelineEntry}[3]{%
+	\noindent\color{accent}\large\textbf{#1}\\
+	{\color{accent}#2}\hfill\textbf{\color{accent}\small[#3]}
+	\newline\newline
+}
+
+\newcommand{\texthr}[1]{%
+	\begin{center}
+	\rule{8cm}{0.4pt}
+	\end{center}
+}
