@@ -1,0 +1,33 @@
+\author{Sachin George Thomas}
+
+\documentclass[letterpaper,10pt]{article}
+\raggedbottom
+
+% Import all premable settings
+\input{preamble/settings.tex}
+\input{preamble/commands.tex}
+\input{preamble/environments.tex}
+
+% Import all styles
+\input{styles/colors.tex}
+\input{styles/formatting.tex}
+
+% Import Packages
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage{mdframed}
+\usepackage{needspace}
+\usepackage[none]{hyphenat}
+\usepackage{setspace} % Add this line
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Set line spacing
+\setstretch{1.2} % Adjust the value as needed
+
+\include{sections/cover-letter-content}
+
+\end{document}
