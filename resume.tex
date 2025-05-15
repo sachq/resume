@@ -20,10 +20,10 @@
 \usepackage{mdframed}
 \usepackage{needspace}
 \usepackage[none]{hyphenat}
-\usepackage{setspace} % Add this line
+\usepackage{setspace}
 
 % Set line spacing
-\setstretch{1.0} % Adjust the value as needed
+\setstretch{1} % Reduce line spacing to single
 
 % Remove page numbers
 \pagenumbering{gobble}
@@ -31,8 +31,14 @@
 % Begin document
 \begin{document}
 \input{sections/header}
+\vspace{-0.5em}
 \input{sections/professional-summary}
+\vspace{-0.5em}
 \input{sections/experience}
+\vspace{-0.5em}
+\input{sections/other-experience.tex}
+\vspace{-0.5em}
 \input{sections/core-skills}
+\vspace{-0.5em}
 \input{sections/education}
 \end{document}
