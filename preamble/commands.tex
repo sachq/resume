@@ -1,18 +1,33 @@
 \usepackage{fontawesome}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 
 % Custom commands for contact info
 \newcommand{\contactItem}[2]{
     {\color{accent}\small\faicon{#1}} \color{accent}#2\hspace{1em}
 }
 
-% Custom command for timeline entries
-\newcommand{\timelineEntry}[3]{%
-	\noindent\color{accent}\large\textbf{#1}\\
-	{\color{accent}#2}\hfill\textbf{\color{accent}\small[#3]}
-	\newline\newline
+\newcommand{\contactItemLink}[2]{
+    {\color{accent}\small\faicon{#1}} \color{accent}\href{https://#2/}{#2}\hspace{1em}
 }
 
-\newcommand{\texthr}[1]{%
+% Custom command for timeline entries
+\newcommand{\timelineEntry}[3]{
+	\vspace{0.4em}
+	\noindent\color{accent}\large\textbf{#1}\\
+	{\color{accent}#2}\hfill\textbf{\color{accent}\small[#3]}
+	\vspace{0.4em}
+	\hrule
+	\vspace{1em}
+}
+
+\newcommand{\timelineEntryNoHr}[3]{
+	\vspace{0.4em}
+	\noindent\color{accent}\large\textbf{#1}\\
+	{\color{accent}#2}\hfill\textbf{\color{accent}\small[#3]}
+	\vspace{0.4em}
+}
+
+\newcommand{\texthr}[1]{
 	\begin{center}
 	\rule{8cm}{0.4pt}
 	\end{center}
