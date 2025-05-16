@@ -1,5 +1,18 @@
 \usepackage{fontawesome}
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
+\usepackage[most]{tcolorbox}
+
+\newtcbox{\inlinehighlight}{on line,
+  colback=gray!12,
+  fontupper=\color{primary},
+  boxrule=0pt,
+  arc=3pt,
+  boxsep=1pt,
+  left=2pt, right=2pt,
+  top=1pt, bottom=1pt,
+  valign=center
+}
+
 
 % Custom commands for contact info
 \newcommand{\contactItem}[2]{
