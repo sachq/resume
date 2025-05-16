@@ -6,4 +6,5 @@
 *.out
 *.synctex.gz
 
-*.cover-letter-content.tex
+sections/cover-letter-content.tex
+cover-letter.pdf
