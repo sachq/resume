@@ -1,6 +1,7 @@
-\newenvironment{sectionContainer}[3]{%
-	\vspace{-0.5em} % Reduce space before the block
-    \noindent\normalsize\textbf{\inlinehighlight{#1} - #2} {#3}
+\newenvironment{sectionContainer}[2]{%
+    \begin{itemize}[leftmargin=12pt,topsep=0pt]
+        \item \normalsize\textbf{#1} - {#2}
+    \end{itemize}
     \begin{mdframed}[
         hidealllines=true,
         skipabove=0pt,
